@@ -1,7 +1,10 @@
 const formData = document.forms['MyForm']
+const content = document.getElementById("table-content")
 
 function formsfunc() {
-  console.log(formData['Name'].value)
-  console.log(formData['Mail'].value)
-  console.log(formData['password'].value)
+  var name = formData['Name'].value
+  var mail = formData['Mail'].value
+  var pass = formData['password'].value
+  
+  content.innerHTML="<tr><td>"+name+"</td><td>"+mail+"</td><td>"+pass+"</td></tr>"
 }
