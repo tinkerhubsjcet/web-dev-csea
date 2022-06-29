@@ -6,5 +6,7 @@ function formsfunc() {
   var mail = formData['Mail'].value
   var pass = formData['password'].value
   
-  content.innerHTML="<tr><td>"+name+"</td><td>"+mail+"</td><td>"+pass+"</td></tr>"
+  var row = "<tr><td>"+name+"</td><td>"+mail+"</td><td>"+pass+"</td></tr>"
+  
+  content.innerHTML = content.innerHTML+row 
 }
